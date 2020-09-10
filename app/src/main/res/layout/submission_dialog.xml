@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_grey"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_and_dialog_bg_shape"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/dialog_negative_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="30"
+            android:nextFocusDown="@+id/dialog_text_view"
+            android:nextFocusRight="@+id/dialog_text_view"
+            android:nextFocusLeft="@+id/dialog_positive_button"
+            android:nextFocusUp= "@+id/dialog_positive_button"
+            android:focusable="true"
+            android:contentDescription="@string/submission_dialog_image_view_content_description"
+            app:srcCompat="@drawable/ic_dialog_cancel" />
+
+        <TextView
+            android:id="@+id/dialog_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="35"
+            android:nextFocusDown="@+id/dialog_positive_button"
+            android:nextFocusRight="@+id/dialog_positive_button"
+            android:nextFocusLeft="@+id/dialog_negative_button"
+            android:nextFocusUp= "@+id/dialog_negative_button"
+            android:focusable="true"
+            android:text="@string/submission_dialog_text_view_text"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dialog_positive_button"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="35"
+            android:background="@drawable/dialog_submit_bg_shape"
+            android:text="@string/submission_dialog_button_text"
+            android:nextFocusDown="@+id/dialog_negative_button"
+            android:nextFocusRight="@+id/dialog_negative_button"
+            android:nextFocusLeft="@+id/dialog_text_view"
+            android:nextFocusUp= "@+id/dialog_text_view"
+            android:focusable="true"
+            android:textAllCaps="false"
+            android:textColor="@color/gads_brown"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/submission_dialog_progress_bar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+</androidx.constraintlayout.widget.ConstraintLayout>

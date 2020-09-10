@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Submit Button Dimens -->
+    <dimen name="submit_button_layout_width">82dp</dimen>
+    <dimen name="submit_button_layout_height">20dp</dimen>
+    <dimen name="submit_button_marginEnd">24dp</dimen>
+    <dimen name="submit_button_text_size">16sp</dimen>
+
+    <!--Image View-->
+    <dimen name="leaderboard_activity_image_view_margin">8dp</dimen>
+    <dimen name="main_activity_image_view_margin">70dp</dimen>
+    <dimen name="image_gads_logo_padding">7dp</dimen>
+
+    <!--Toolbar-->
+    <dimen name="toolbar_text_view_text_size">18sp</dimen>
+    <dimen name="toolbar_text_view_margin">20dp</dimen>
+
+    <!--TabLayout-->
+    <dimen name="tab_indicator_height">6dp</dimen>
+
+    <!--FrameLayout-->
+    <dimen name="frame_layout_padding_end_and_start">5dp</dimen>
+    <dimen name="frame_layout_padding_top">15dp</dimen>
+
+    <!--Leaderboard Fragment Card View-->
+    <dimen name="card_view_corner_radius">2dp</dimen>
+    <dimen name="card_view_card_elevation">2dp</dimen>
+    <dimen name="card_view_max_elevation">3dp</dimen>
+    <dimen name="card_view_padding_left">15dp</dimen>
+    <dimen name="card_view_padding_right">10dp</dimen>
+
+    <!--Leaderboard Fragment Text View-->
+    <dimen name="tv_name_text_size">18sp</dimen>
+    <dimen name="tv_points_country_text_size">16sp</dimen>
+
+    <!--EditText Views-->
+    <dimen name="edit_text_padding">15dp</dimen>
+    <dimen name="edit_text_margin_end_and_start">8dp</dimen>
+    <dimen name="edit_text_text_size">14sp</dimen>
+
+    <dimen name="text_project_submission_text_size">20sp</dimen>
+    <dimen name="tab_layout_elevation">6dp</dimen>
+
+    <!--Submission Activity and Dialogs-->
+    <dimen name="submit_activity_edit_text_text_size">16sp</dimen>
+    <dimen name="submit_activity_edit_text_padding_big">17dp</dimen>
+    <dimen name="submit_activity_edit_text_padding_small">15dp</dimen>
+    <dimen name="submit_activity_toolbar_text_view_text_size">15sp</dimen>
+    <dimen name="submit_activity_button_text_size">22sp</dimen>
+    <dimen name="submission_dialog_text_view_text_size">25sp</dimen>
+    <dimen name="submission_dialog_text_view_bottom_margin">32dp</dimen>
+    <dimen name="submission_dialog_image_width">120dp</dimen>
+    <dimen name="submission_dialog_image_height">120dp</dimen>
+    <dimen name="submission_dialog_image_margin_top">30dp</dimen>
+    <dimen name="submission_dialog_constraint_layout_margin">20dp</dimen>
+
+
+</resources>

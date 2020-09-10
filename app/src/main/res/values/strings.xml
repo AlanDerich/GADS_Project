@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">GADSLeaderboard</string>
+    <string name="top_learners_list_activity_name">LEADERBOARD</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="text_view_default_text">Text View</string>
+    <string name="learner_badge_image_view_content_description">Learner Badge Image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submit_button_text_description">Submit</string>
+    <string name="image_back_button_content_description">Back Button</string>
+    <string name="image_gads_logo_content_description">GADS Logo</string>
+    <string name="tv_gads_name_text">Google Africa\nDeveloper Scholarship</string>
+    <string name="tv_project_submission_text">Project Submission</string>
+    <string name="et_first_name_text">First Name</string>
+    <string name="et_last_name_text">Last Name</string>
+    <string name="et_email_address_text">Email Address</string>
+    <string name="et_github_link_text">Project on GITHUB (link)</string>
+
+    <string name="network_error_message">Unable to connect.Please check your internet connection then Swipe to Refresh</string>
+    <string name="bundle_is_null_error_message">Unable to get data. Please Swipe to Refresh</string>
+    <string name="unable_to_submit_project">An error occurred while sending data. Please try again later</string>
+    <string name="swipe_to_refresh_message">Swipe Down to Refresh List from the Internet</string>
+    <string name="submission_dialog_image_view_content_description">Cancel Button</string>
+    <string name="submission_dialogs_image_view_content_description">Image</string>
+    <string name="submission_successful_dialog_text_view_text">Submission Successful</string>
+    <string name="submission_unsuccessful_dialog_text_view_text">Submission not Successful</string>
+    <string name="submission_dialog_text_view_text">Are you sure?</string>
+    <string name="submission_dialog_button_text">Yes</string>
+
+    <string name="tab_item_1_text">Learning Leaders</string>
+
+    <string name="tab_item_2_text">Skill IQ Leaders</string>
+    <string name="submission_activity_divider_image_content_description">Image Bar</string>
+
+
+    <string name="edit_text_email_error_message">Email Address is Invalid</string>
+    <string name="edit_text_github_link_error_message">Link is Invalid. Please start with https://www.</string>
+    <string name="edit_text_first_name_error_message">First Name field is empty</string>
+    <string name="edit_text_last_name_error_message">Last Name field is empty</string>
+    <string name="splash_screen_content_description">Welcome Screen</string>
+    <string name="toolbar_content_description">Toolbar</string>
+    <string-array name="leaderboard_categories_url">
+        <item>api/hours</item>
+        <item>api/skilliq</item>
+    </string-array>
+</resources>

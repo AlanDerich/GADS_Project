@@ -1,0 +1,37 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/background_image</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+
+    </style>
+
+    <style name="MyEditTextStyle" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/edit_text_text_size</item>
+        <item name="android:background">@drawable/edit_text_and_dialog_bg_shape</item>
+        <item name="android:layout_marginEnd">@dimen/edit_text_margin_end_and_start</item>
+        <item name="android:layout_marginStart">@dimen/edit_text_margin_end_and_start</item>
+    </style>
+
+
+
+</resources>

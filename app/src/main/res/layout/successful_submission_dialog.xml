@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_grey"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/submission_dialog_constraint_layout_margin"
+        android:layout_marginEnd="@dimen/submission_dialog_constraint_layout_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/edit_text_and_dialog_bg_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/dialog_negative_button"
+            android:layout_width="@dimen/submission_dialog_image_width"
+            android:layout_height="@dimen/submission_dialog_image_height"
+            android:layout_marginTop="@dimen/submission_dialog_image_margin_top"
+            android:contentDescription="@string/submission_dialogs_image_view_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_check_circle_24" />
+
+        <TextView
+            android:id="@+id/dialog_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/submission_dialog_text_view_bottom_margin"
+            android:text="@string/submission_successful_dialog_text_view_text"
+            android:textAllCaps="false"
+            android:textSize="@dimen/submission_dialog_text_view_text_size"
+            android:textStyle="bold"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_negative_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submit_activity_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    tools:context=".SubmissionActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:nextFocusDown="@+id/image_back_button"
+        android:nextFocusRight="@+id/image_back_button"
+        android:nextFocusLeft="@+id/submit_button"
+        android:nextFocusUp= "@+id/submit_button"
+        android:focusable="true"
+        android:contentDescription="@string/toolbar_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:focusable="false"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/image_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:contentDescription="@string/image_back_button_content_description"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:nextFocusDown="@+id/et_first_name"
+                android:nextFocusRight="@+id/et_first_name"
+                android:nextFocusLeft="@+id/submit_button"
+                android:nextFocusUp= "@+id/submit_button"
+                android:focusable="true"
+                android:clickable="true"
+                app:srcCompat="@drawable/white_ic_back_arrow" />
+
+            <ImageView
+                android:id="@+id/image_gads_logo"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:contentDescription="@string/image_gads_logo_content_description"
+                android:layout_marginStart="30dp"
+                android:focusable="false"
+                android:paddingStart="@dimen/image_gads_logo_padding"
+                android:paddingTop="@dimen/image_gads_logo_padding"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/image_gads_logo_padding"
+                app:srcCompat="@drawable/gads_logo"/>
+
+            <TextView
+                android:id="@+id/tv_gads_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/leaderboard_activity_image_view_margin"
+                android:layout_weight="80"
+                android:focusable="false"
+                android:text="@string/tv_gads_name_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/submit_activity_toolbar_text_view_text_size"
+                 />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_project_submission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_project_submission_text"
+        android:textColor="@color/gads_brown"
+        android:textSize="@dimen/text_project_submission_text_size"
+        android:textStyle="bold"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/submission_activity_divider_image_content_description"
+        android:focusable="false"
+        android:background="@drawable/submit_activity_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_project_submission" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/submission_fields_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <TextView
+            android:id="@+id/et_error_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/gads_brown"
+            android:textSize="12sp"
+            android:nextFocusDown="@+id/et_first_name"
+            android:nextFocusRight="@+id/et_first_name"
+            android:nextFocusLeft="@+id/image_back_button"
+            android:nextFocusUp= "@+id/image_back_button"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_and_dialog_bg_shape"
+            android:backgroundTint="@color/white"
+            android:hint="@string/et_first_name_text"
+            android:inputType="textPersonName"
+            android:padding="@dimen/submit_activity_edit_text_padding_small"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/submit_activity_edit_text_text_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_error_text_view" />
+
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edit_text_and_dialog_bg_shape"
+            android:backgroundTint="@color/white"
+            android:hint="@string/et_last_name_text"
+            android:inputType="textPersonName"
+            android:padding="@dimen/submit_activity_edit_text_padding_small"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/submit_activity_edit_text_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/et_first_name" />
+
+        <EditText
+            android:id="@+id/et_email_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edit_text_and_dialog_bg_shape"
+            android:backgroundTint="@color/white"
+            android:hint="@string/et_email_address_text"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/submit_activity_edit_text_padding_big"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/submit_activity_edit_text_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_first_name" />
+
+        <EditText
+            android:id="@+id/et_github_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edit_text_and_dialog_bg_shape"
+            android:backgroundTint="@color/white"
+            android:hint="@string/et_github_link_text"
+            android:inputType="text"
+            android:padding="@dimen/submit_activity_edit_text_padding_big"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/submit_activity_edit_text_text_size"
+            android:nextFocusDown="@+id/submit_button"
+            android:nextFocusRight="@+id/submit_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email_address" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/submit_button_shape"
+            android:text="@string/submit_button_text_description"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/submit_activity_button_text_size"
+            android:textStyle="bold"
+            android:nextFocusDown="@+id/image_back_button"
+            android:nextFocusRight="@+id/image_back_button"
+            android:nextFocusLeft="@+id/et_github_link"
+            android:nextFocusUp= "@+id/et_github_link"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_github_link" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:visibility="gone"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/submission_dialog_frame_layout"
+        android:layout_width = "match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

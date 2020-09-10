@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusRight="@+id/image_badge"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_card_elevation"
+        app:cardMaxElevation="@dimen/card_view_max_elevation"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:contentPaddingLeft="@dimen/card_view_padding_left"
+        app:contentPaddingRight="@dimen/card_view_padding_right">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_badge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leaderboard_activity_image_view_margin"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/learner_badge_image_view_content_description"
+                android:nextFocusDown="@+id/tv_name"
+                android:nextFocusRight="@+id/tv_name"
+                android:nextFocusLeft="@+id/card_view_item"
+                android:nextFocusUp= "@+id/card_view_item"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_learner_placeholder" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:weightSum="100"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_badge"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:nextFocusDown="@+id/tv_points_country"
+                    android:nextFocusRight="@+id/tv_points_country"
+                    android:nextFocusLeft="@+id/image_badge"
+                    android:nextFocusUp= "@+id/image_badge"
+                    android:focusable="true"
+                    android:text="@string/text_view_default_text"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/tv_name_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_points_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:nextFocusDown="@+id/card_view_item"
+                    android:nextFocusRight="@+id/card_view_item"
+                    android:nextFocusLeft="@+id/tv_name"
+                    android:nextFocusUp= "@+id/tv_name"
+                    android:focusable="true"
+                    android:layout_weight="50"
+                    android:text="@string/text_view_default_text"
+                    android:textSize="@dimen/tv_points_country_text_size" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

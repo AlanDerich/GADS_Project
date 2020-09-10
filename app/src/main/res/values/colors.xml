@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">@color/gads_brown</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#757575</color>
+    <color name="dark_grey">#4E4E4E</color>
+    <color name="gads_brown">#ec8807</color>
+    <color name="gads_darker_brown">#B16604</color>
+    <color name="gads_darkest_brown">#000000</color>
+    <color name="green">#05920b</color>
+    <color name="red">#fa0404</color>
+    <color name="transparent_grey">#804E4E4E</color>
+</resources>
